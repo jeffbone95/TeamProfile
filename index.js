@@ -1,7 +1,7 @@
 const inquirer = require('inquirer'); 
 const generateHTML = require('./src/generateHtml');
 const teamName = []
-const Management = require('./lib/Manager');
+const Management = require('./lib/Management');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const fs = require('fs');
@@ -12,7 +12,7 @@ function init() {
   inquirer.prompt([{
     type: 'input',
     name: 'name',
-    message: "What is the Manager's name?",
+    message: "What is the head of Manager's name?",
   },
   {
     type: 'input',
